@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Klee+One&family=Cherry+Bomb+One&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Klee One', cursive;
+  background: linear-gradient(to right, #ffe7f0, #d8f8ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  text-align: center;
+  background: #ffffffb4;
+  padding: 30px 20px;
+  border-radius: 25px;
+  box-shadow: 0 0 25px rgba(255, 182, 193, 0.4);
+  width: 90%;
+  max-width: 400px;
+}
+
+h1 {
+  font-family: 'Cherry Bomb One', cursive;
+  font-size: 2rem;
+  color: #ff69b4;
+}
+
+.instruction {
+  font-size: 1rem;
+  margin: 10px 0;
+  color: #555;
+}
+
+.btns button {
+  background-color: #ffb6c1;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 8px;
+  font-size: 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btns button:hover {
+  background-color: #ff69b4;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.chibi {
+  width: 100px;
+  margin-top: 20px;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  .btns button {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+}
